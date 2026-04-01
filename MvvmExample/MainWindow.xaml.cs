@@ -29,6 +29,7 @@ namespace MvvmExample
             willie.AddCourseRecord(new CourseRecord("CIS200", Grade.B, 4));
             willie.AddCourseRecord(new CourseRecord("MATH220", Grade.C, 4));
             DataContext = willie;
+            DataContext = new ComputerScienceStudentViewModel(willie);
         }
     }
 }
